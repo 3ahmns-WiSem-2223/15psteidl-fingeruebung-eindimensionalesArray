@@ -8,4 +8,4 @@ n = # der Elemente im Array
 (n - 1) = letzte Stelle im Array
 0 = erste Stelle im Array
 
-##Wir können auf n - 1 zugreifen indem wir array(array.length - 1) verwenden.
+Wir können auf n - 1 zugreifen indem wir array(array.length - 1) verwenden.
