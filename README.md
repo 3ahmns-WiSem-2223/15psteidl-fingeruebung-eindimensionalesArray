@@ -1,0 +1,1 @@
+# 15psteidl-fingeruebung-eindimensionalesArray
