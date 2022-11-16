@@ -14,6 +14,8 @@ public class Arrays : MonoBehaviour
     string[] array4 = new string[10];
     [SerializeField]
     GameObject[] arrayColoredImagesRed;
+    [SerializeField]
+    string longstring;
 
 
     // Start is called before the first frame update
@@ -38,6 +40,16 @@ public class Arrays : MonoBehaviour
         Debug.Log(arrayColoredImagesRed[arrayColoredImagesRed.Length-1]);
 
         AlleWerte();
+
+        for (int i = 0; i < array3.Length; i++)
+        {
+            Debug.Log(array3[i]);
+        }
+        for (int i = 0; i < array1.Length; i++)
+        {
+            longstring = longstring + array1[i] + " ";
+        }
+        Debug.Log(longstring);
     }
 
     // Update is called once per frame
