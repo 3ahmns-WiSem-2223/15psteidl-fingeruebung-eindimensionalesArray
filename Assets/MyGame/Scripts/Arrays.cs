@@ -36,6 +36,8 @@ public class Arrays : MonoBehaviour
         Debug.Log(array3[array3.Length-1]);
         Debug.Log(array4[array4.Length-1]);
         Debug.Log(arrayColoredImagesRed[arrayColoredImagesRed.Length-1]);
+
+        AlleWerte();
     }
 
     // Update is called once per frame
@@ -43,4 +45,10 @@ public class Arrays : MonoBehaviour
     {
         
     }
+
+    void AlleWerte()
+    {
+        Debug.Log(array1[0] + " " + array1[1] + " " + array1[2] + " " + array1[3]);
+    }
+
 }
