@@ -50,6 +50,21 @@ public class Arrays : MonoBehaviour
             longstring = longstring + array1[i] + " ";
         }
         Debug.Log(longstring);
+
+        array1[3] = 3;
+        Debug.Log(array1[3]);
+
+        array2[2] = 203;
+        Debug.Log(array2[2]);
+
+        array3[5] = 333;
+        Debug.Log(array3[5]);
+
+        array4[2] = "heute";
+        Debug.Log(array4[2]);
+
+        arrayColoredImagesRed[3].GetComponent<SpriteRenderer>().color = Color.green;
+
     }
 
     // Update is called once per frame
