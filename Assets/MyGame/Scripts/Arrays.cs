@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Arrays : MonoBehaviour
 {
-    int[] array;
     [SerializeField]
     int[] array1 = {1, 2, 3, 4};
     [SerializeField]
@@ -25,6 +24,18 @@ public class Arrays : MonoBehaviour
             array4[i] = "array4";
         }
         arrayColoredImagesRed = GameObject.FindGameObjectsWithTag("RedImage");
+
+        Debug.Log(array1[0]);
+        Debug.Log(array2[0]);
+        Debug.Log(array3[0]);
+        Debug.Log(array4[0]);
+        Debug.Log(arrayColoredImagesRed[0]);
+
+        Debug.Log(array1[array1.Length-1]);
+        Debug.Log(array2[array2.Length-1]);
+        Debug.Log(array3[array3.Length-1]);
+        Debug.Log(array4[array4.Length-1]);
+        Debug.Log(arrayColoredImagesRed[arrayColoredImagesRed.Length-1]);
     }
 
     // Update is called once per frame
