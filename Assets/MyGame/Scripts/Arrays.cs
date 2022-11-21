@@ -16,11 +16,27 @@ public class Arrays : MonoBehaviour
     GameObject[] arrayColoredImagesRed;
     [SerializeField]
     string longstring;
-
+    [SerializeField]
+    int[] array5 = new int[25];
+    int a = 20;
+    [SerializeField]
+    int[] array6 = new int[250];
+    [SerializeField]
+    int[] array7 = new int[250];
+    int bruh = 1;
+    [SerializeField]
+    string[] array8 = new string[100];
+    [SerializeField]
+    float[] array9 = new float[1000];
+    [SerializeField]
+    int[] array10;
+    [SerializeField]
+    int[] array11 = new int[1000];
 
     // Start is called before the first frame update
     void Start()
     {
+
         for (int i = 0; i < array4.Length; i++)
         {
             array4[i] = "array4";
@@ -49,6 +65,42 @@ public class Arrays : MonoBehaviour
         {
             longstring = longstring + array1[i] + " ";
         }
+
+        for (int i = 0; i < array5.Length; i++)
+        {
+            a = a + 2;
+            array5[i] = a;
+        }
+
+        for (int i = 0; i < array6.Length; i++)
+        {
+            array6[i] = i * 2;
+        }
+
+        for (int i = 0; i < array7.Length; i++)
+        {
+            array7[i] = bruh;
+            bruh = bruh + 2;
+        }
+
+        for (int i = 0; i < array8.Length;)
+        {
+            array8[i] = "a";
+            i = i + 2;
+        }
+
+        for (int brah = 1; brah < array8.Length;)
+        {
+            array8[brah] = "b";
+            brah = brah + 2;
+        }
+
+        for (int i = 0; i < array9.Length; i++)
+        {
+            array9[i] = UnityEngine.Random.Range(0f, 100f);
+        }
+
+
         Debug.Log(longstring);
 
         array1[3] = 3;
@@ -64,6 +116,23 @@ public class Arrays : MonoBehaviour
         Debug.Log(array4[2]);
 
         arrayColoredImagesRed[3].GetComponent<SpriteRenderer>().color = Color.green;
+
+        System.Array.Sort(array9);
+        for (int i = 0; i < array9.Length; i++)
+        {
+            Debug.Log(array9[i]);
+        }
+
+        for (int i = 0; i < array11.Length; i++)
+        {
+            array11[i] = UnityEngine.Random.Range(0, 100000);
+        }
+
+        System.Array.Sort(array11);
+
+        Debug.Log(array11[0]);
+        Debug.Log(array11[array11.Length -1]);
+        
 
     }
 
