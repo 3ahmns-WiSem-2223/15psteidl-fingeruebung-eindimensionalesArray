@@ -10,3 +10,8 @@ n = # der Elemente im Array
 
 
 Wir können auf n - 1 zugreifen indem wir array(array.length - 1) verwenden.
+
+
+## UnityVersion: 2020.3.18f1
+## VisualStudioVersion: 2019
+## OperationSystem: Windows 11, version 22H2
